@@ -1,0 +1,30 @@
+/* Button animation */
+#animateBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+#animateBtn:hover {
+  transform: scale(1.1);
+}
+
+/* Box animation */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin-top: 20px;
+  animation: bounce 1s ease-in-out infinite;
+  opacity: 0;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
